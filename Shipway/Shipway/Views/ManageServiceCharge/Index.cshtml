@@ -1,0 +1,188 @@
+﻿
+@model IEnumerable<ShipwayUnitOfWork.Models.ServiceCharge>
+@using ShipwayUnitOfWork.Helper
+@{
+    ViewBag.Title = "Quản lý biểu phí";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                QUẢN LÝ BIỂU PHÍ
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                </span>
+            </header>
+            <div class="panel-body">
+
+                <div class="row-fluid">
+                    <button data-toggle="modal" class="btn btn-primary" data-target="#ModalAddAgency">
+                        Thêm biểu phí
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+
+                <div class="text-error">
+                    @if (string.IsNullOrEmpty(TempData["errorMessage"] as string))
+                    {
+                        @TempData["errorMessage"]
+                    }
+                </div>
+                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="ModalAddAgency" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                <h4 class="modal-title">Thêm biểu phí</h4>
+                            </div>
+                            @using (Html.BeginForm("SaveServiceCharge", "ManageServiceCharge", FormMethod.Post, new { @class = "form-horizontal" }))
+                            {
+                                <div class="modal-body">
+
+                                    @Html.ValidationSummary(true)
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Tuyến *</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownList("RouterId", new SelectList(ViewBag.ListRouter, "RouterId", "RouterName"), new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Loại dịch vụ*</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownList("KindServiceId", new SelectList(ViewBag.ListKindService, "KindServiceId", "KindServiceName"), new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Thời gian giao hàng*</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownList("KindTimeReceivedId", new SelectList(ViewBag.ListKindTimeReceived, "KindTimeReceivedId", "Name"), new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Khối lượng *</label>
+                                            <div class="col-lg-9">
+                                                @Html.TextBox("Weight", null, new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Giá tiền giao nội thành *</label>
+                                            <div class="col-lg-9">
+                                                @Html.TextBox("CostOderUrban", null, new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Giá tiền giao ngoại thành*</label>
+                                            <div class="col-lg-9">
+                                                @Html.TextBox("CostOderSubUrban", null, new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Khối lượng thêm *</label>
+                                            <div class="col-lg-9">
+                                                @Html.TextBox("AddWeight", null, new { @class = "form-control", @required = "required", @type = "number", @step = "0.1", @value = "0.5" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Số tiền thêm( tương ứng khối lượng thêm) *</label>
+                                            <div class="col-lg-9">
+                                                @Html.TextBox("AddMoney", null, new { @class = "form-control", @required = "required", @type = "number", @step = "1000", @value = "0" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-2 col-lg-10">
+                                            <button type="submit" class="btn btn-default btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            @Html.TextBox("fullTextSearch", null, new { @class = "form-control", id = "fullTextSearch", placeholder = "Nhập tìm kiếm" })
+                        </div>
+                        <div class="col-lg-2">
+                            <p data-toggle="modal" class="btn btn-primary" id="clearFilter">
+                                Xóa bộ lọc
+                                <i class="fa fa-times-circle"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-lg-4">
+                            @Html.DropDownList("RouterId", new SelectList(ViewBag.ListRouter, "RouterId", "RouterName"), "Tất cả tuyến", new { @class = "form-control", id = "routerSearch" })
+                        </div>
+                        <div class="col-lg-4">
+                            @Html.DropDownList("KindServiceId", new SelectList(ViewBag.ListKindService, "KindServiceId", "KindServiceName"), "Tất cả loại dịch vụ", new { @class = "form-control", id = "kindServiceSearch" })
+                        </div>
+                        <div class="col-lg-4">
+                            @Html.DropDownList("KindTimeReceivedId", new SelectList(ViewBag.ListKindTimeReceived, "KindTimeReceivedId", "Name"), "Tất cả ngày giao", new { @class = "form-control", id = "kindTimeReceiveSearch" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adv-table modal-body">
+                    <table class="display table listServiceCharge">
+                        <thead>
+                            <tr>
+                                <th>Tuyến</th>
+                                <th>Gói dịch vụ</th>
+                                <th>Thời gian giao</th>
+                                <th>Khối lượng</th>
+                                <th>Nội thành</th>
+                                <th>Ngoại thành</th>
+                                <th>Thêm khối lượng</th>
+                                <th>Thêm tiền</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableContent">
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td id="router_@item.RouterId">@item.Router.RouterName</td>
+                                    <td id="kindService_@item.KindServiceId">@item.KindService.KindServiceName</td>
+                                    <td id="kindTimeReceive_@item.KindTimeReceivedId">@item.KindTimeReceived.Name</td>
+                                    <td>@item.Weight kg</td>
+                                    <td>@Utils.ConvertMoney(item.CostOderUrban ?? 0) vnđ</td>
+                                    <td>@Utils.ConvertMoney(item.CostOderSubUrban ?? 0) vnđ</td>
+                                    <td>@item.AddWeight kg</td>
+                                    <td>@Utils.ConvertMoney(item.AddMoney ?? 0) vnđ</td>
+                                    <td>
+                                        <a class="btn btn-primary editmodal" href="#" data-url="@Url.Action("EditServiceCharge", "ManageServiceCharge", new { id=@item.ServiceChargeId })" title="Edit ServiceCharge" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-danger deletemodal" href="#" data-url="@Url.Action("DeleteServiceCharge", "ManageServiceCharge", new { id=@item.ServiceChargeId })"><i class="fa fa-trash-o"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="modal_serviceCharge" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content partial-container">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <script src="~/Scripts/manageServiceCharge.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+}

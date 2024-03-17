@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Shipway_databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Agency">
+    <Key>
+      <PropertyRef Name="AgencyId" />
+    </Key>
+    <Property Name="AgencyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AgencyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ActivityTime" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="WardId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsCentralWarehouse" Type="Boolean" />
+    <NavigationProperty Name="Ward" Relationship="Self.FK__Agency__WardId__5165187F" FromRole="Agency" ToRole="Ward" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__Exhibitio__Agenc__14270015" FromRole="Agency" ToRole="Exhibition" />
+    <NavigationProperty Name="Exhibition1" Relationship="Self.FK__Exhibitio__Assig__1332DBDC" FromRole="Agency" ToRole="Exhibition" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__AgencyId__5812160E" FromRole="Agency" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="AssignWork">
+    <Key>
+      <PropertyRef Name="AssignWorkId" />
+    </Key>
+    <Property Name="AssignWorkId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExhibitionId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="ShipperId" Type="Int32" />
+    <Property Name="AssignWorkDate" Type="DateTime" Precision="0" />
+    <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__AssignWor__Exhib__1AD3FDA4" FromRole="AssignWork" ToRole="Exhibition" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__AssignWor__Shipp__1BC821DD" FromRole="AssignWork" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="DistrictId" />
+    </Key>
+    <Property Name="DistrictId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProvinceId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Province" Relationship="Self.FK__District__Provin__4BAC3F29" FromRole="District" ToRole="Province" />
+    <NavigationProperty Name="Ward" Relationship="Self.FK__Ward__DistrictId__4E88ABD4" FromRole="District" ToRole="Ward" />
+  </EntityType>
+  <EntityType Name="Exhibition">
+    <Key>
+      <PropertyRef Name="ExhibitionId" />
+    </Key>
+    <Property Name="ExhibitionId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SenderId" Type="Int32" />
+    <Property Name="ReceiverName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiverPhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReceiverAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="WardReceiveId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PackageWeigh" Type="Int32" />
+    <Property Name="PackageLong" Type="Int32" />
+    <Property Name="PackageWide" Type="Int32" />
+    <Property Name="PackageHigh" Type="Int32" />
+    <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedUserId" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedUserId" Type="Int32" />
+    <Property Name="KindServiceId" Type="Int32" />
+    <Property Name="Cost" Type="Int32" />
+    <Property Name="ExhibitionStatusId" Type="Int32" />
+    <Property Name="DayReceive" Type="DateTime" Precision="3" />
+    <Property Name="LocationSender" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="LocationReceive" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsSendToAgency" Type="Boolean" />
+    <Property Name="AssignToAgencyId" Type="Int32" />
+    <Property Name="GroupLump" Type="Int32" />
+    <Property Name="NumberOfFailedDeliveries" Type="Int32" />
+    <Property Name="AgencyId" Type="Int32" />
+    <NavigationProperty Name="Agency" Relationship="Self.FK__Exhibitio__Agenc__14270015" FromRole="Exhibition" ToRole="Agency" />
+    <NavigationProperty Name="Agency1" Relationship="Self.FK__Exhibitio__Assig__1332DBDC" FromRole="Exhibition" ToRole="Agency" />
+    <NavigationProperty Name="AssignWork" Relationship="Self.FK__AssignWor__Exhib__1AD3FDA4" FromRole="Exhibition" ToRole="AssignWork" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Exhibitio__Creat__10566F31" FromRole="Exhibition" ToRole="Users" />
+    <NavigationProperty Name="KindService" Relationship="Self.FK__Exhibitio__KindS__123EB7A3" FromRole="Exhibition" ToRole="KindService" />
+    <NavigationProperty Name="Users1" Relationship="Self.FK__Exhibitio__LastM__114A936A" FromRole="Exhibition" ToRole="Users" />
+    <NavigationProperty Name="Users2" Relationship="Self.FK__Exhibitio__Sende__0E6E26BF" FromRole="Exhibition" ToRole="Users" />
+    <NavigationProperty Name="Ward" Relationship="Self.FK__Exhibitio__WardR__0F624AF8" FromRole="Exhibition" ToRole="Ward" />
+    <NavigationProperty Name="HistoryTrip" Relationship="Self.FK__HistoryTr__Exhib__17036CC0" FromRole="Exhibition" ToRole="HistoryTrip" />
+  </EntityType>
+  <EntityType Name="ExhibitionStatus">
+    <Key>
+      <PropertyRef Name="ExhibitionStatusId" />
+    </Key>
+    <Property Name="ExhibitionStatusId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HistoryTrip" Relationship="Self.FK__HistoryTr__Exhib__17F790F9" FromRole="ExhibitionStatus" ToRole="HistoryTrip" />
+  </EntityType>
+  <EntityType Name="HistoryTrip">
+    <Key>
+      <PropertyRef Name="HistoryTripId" />
+    </Key>
+    <Property Name="HistoryTripId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExhibitionId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+    <Property Name="DateTrip" Type="DateTime" Precision="3" />
+    <Property Name="ExhibitionStatusId" Type="Int32" />
+    <Property Name="CurrentAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__HistoryTr__Exhib__17036CC0" FromRole="HistoryTrip" ToRole="Exhibition" />
+    <NavigationProperty Name="ExhibitionStatus" Relationship="Self.FK__HistoryTr__Exhib__17F790F9" FromRole="HistoryTrip" ToRole="ExhibitionStatus" />
+  </EntityType>
+  <EntityType Name="KindService">
+    <Key>
+      <PropertyRef Name="KindServiceId" />
+    </Key>
+    <Property Name="KindServiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KindServiceName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__Exhibitio__KindS__123EB7A3" FromRole="KindService" ToRole="Exhibition" />
+    <NavigationProperty Name="ServiceCharge" Relationship="Self.FK__ServiceCh__KindS__619B8048" FromRole="KindService" ToRole="ServiceCharge" />
+  </EntityType>
+  <EntityType Name="KindTimeReceived">
+    <Key>
+      <PropertyRef Name="KindTimeReceivedId" />
+    </Key>
+    <Property Name="KindTimeReceivedId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NumberOfDay" Type="Int32" />
+    <NavigationProperty Name="ServiceCharge" Relationship="Self.FK__ServiceCh__KindT__628FA481" FromRole="KindTimeReceived" ToRole="ServiceCharge" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="ProvinceId" />
+    </Key>
+    <Property Name="ProvinceId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Region" Type="Int32" />
+    <NavigationProperty Name="District" Relationship="Self.FK__District__Provin__4BAC3F29" FromRole="Province" ToRole="District" />
+  </EntityType>
+  <EntityType Name="Router">
+    <Key>
+      <PropertyRef Name="RouterId" />
+    </Key>
+    <Property Name="RouterId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RouterName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ServiceCharge" Relationship="Self.FK__ServiceCh__Route__60A75C0F" FromRole="Router" ToRole="ServiceCharge" />
+  </EntityType>
+  <EntityType Name="ServiceCharge">
+    <Key>
+      <PropertyRef Name="ServiceChargeId" />
+    </Key>
+    <Property Name="ServiceChargeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RouterId" Type="Int32" />
+    <Property Name="KindServiceId" Type="Int32" />
+    <Property Name="KindTimeReceivedId" Type="Int32" />
+    <Property Name="CostOderUrban" Type="Int32" />
+    <Property Name="CostOderSubUrban" Type="Int32" />
+    <Property Name="AddWeight" Type="Int32" />
+    <Property Name="AddMoney" Type="Int32" />
+    <NavigationProperty Name="KindService" Relationship="Self.FK__ServiceCh__KindS__619B8048" FromRole="ServiceCharge" ToRole="KindService" />
+    <NavigationProperty Name="KindTimeReceived" Relationship="Self.FK__ServiceCh__KindT__628FA481" FromRole="ServiceCharge" ToRole="KindTimeReceived" />
+    <NavigationProperty Name="Router" Relationship="Self.FK__ServiceCh__Route__60A75C0F" FromRole="ServiceCharge" ToRole="Router" />
+    <Property Name="Weight" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TypeUsers">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__TypeId__571DF1D5" FromRole="TypeUsers" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WardId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="AgencyId" Type="Int32" />
+    <NavigationProperty Name="Agency" Relationship="Self.FK__Users__AgencyId__5812160E" FromRole="Users" ToRole="Agency" />
+    <NavigationProperty Name="AssignWork" Relationship="Self.FK__AssignWor__Shipp__1BC821DD" FromRole="Users" ToRole="AssignWork" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__Exhibitio__Creat__10566F31" FromRole="Users" ToRole="Exhibition" />
+    <NavigationProperty Name="Exhibition1" Relationship="Self.FK__Exhibitio__LastM__114A936A" FromRole="Users" ToRole="Exhibition" />
+    <NavigationProperty Name="Exhibition2" Relationship="Self.FK__Exhibitio__Sende__0E6E26BF" FromRole="Users" ToRole="Exhibition" />
+    <NavigationProperty Name="TypeUsers" Relationship="Self.FK__Users__TypeId__571DF1D5" FromRole="Users" ToRole="TypeUsers" />
+    <NavigationProperty Name="Ward" Relationship="Self.FK__Users__WardId__5629CD9C" FromRole="Users" ToRole="Ward" />
+  </EntityType>
+  <EntityType Name="Ward">
+    <Key>
+      <PropertyRef Name="WardId" />
+    </Key>
+    <Property Name="WardId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DistrictId" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Region" Type="Int32" />
+    <NavigationProperty Name="Agency" Relationship="Self.FK__Agency__WardId__5165187F" FromRole="Ward" ToRole="Agency" />
+    <NavigationProperty Name="District" Relationship="Self.FK__Ward__DistrictId__4E88ABD4" FromRole="Ward" ToRole="District" />
+    <NavigationProperty Name="Exhibition" Relationship="Self.FK__Exhibitio__WardR__0F624AF8" FromRole="Ward" ToRole="Exhibition" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__WardId__5629CD9C" FromRole="Ward" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK__Agency__WardId__5165187F">
+    <End Role="Ward" Type="Self.Ward" Multiplicity="0..1" />
+    <End Role="Agency" Type="Self.Agency" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ward">
+        <PropertyRef Name="WardId" />
+      </Principal>
+      <Dependent Role="Agency">
+        <PropertyRef Name="WardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__Agenc__14270015">
+    <End Role="Agency" Type="Self.Agency" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agency">
+        <PropertyRef Name="AgencyId" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="AgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__Assig__1332DBDC">
+    <End Role="Agency" Type="Self.Agency" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agency">
+        <PropertyRef Name="AgencyId" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="AssignToAgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__AgencyId__5812160E">
+    <End Role="Agency" Type="Self.Agency" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agency">
+        <PropertyRef Name="AgencyId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="AgencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AssignWor__Exhib__1AD3FDA4">
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="0..1" />
+    <End Role="AssignWork" Type="Self.AssignWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exhibition">
+        <PropertyRef Name="ExhibitionId" />
+      </Principal>
+      <Dependent Role="AssignWork">
+        <PropertyRef Name="ExhibitionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AssignWor__Shipp__1BC821DD">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="AssignWork" Type="Self.AssignWork" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AssignWork">
+        <PropertyRef Name="ShipperId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__District__Provin__4BAC3F29">
+    <End Role="Province" Type="Self.Province" Multiplicity="0..1" />
+    <End Role="District" Type="Self.District" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Province">
+        <PropertyRef Name="ProvinceId" />
+      </Principal>
+      <Dependent Role="District">
+        <PropertyRef Name="ProvinceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ward__DistrictId__4E88ABD4">
+    <End Role="District" Type="Self.District" Multiplicity="0..1" />
+    <End Role="Ward" Type="Self.Ward" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="DistrictId" />
+      </Principal>
+      <Dependent Role="Ward">
+        <PropertyRef Name="DistrictId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__Creat__10566F31">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="CreatedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__KindS__123EB7A3">
+    <End Role="KindService" Type="Self.KindService" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KindService">
+        <PropertyRef Name="KindServiceId" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="KindServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__LastM__114A936A">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="LastModifiedUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__Sende__0E6E26BF">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="SenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Exhibitio__WardR__0F624AF8">
+    <End Role="Ward" Type="Self.Ward" Multiplicity="0..1" />
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ward">
+        <PropertyRef Name="WardId" />
+      </Principal>
+      <Dependent Role="Exhibition">
+        <PropertyRef Name="WardReceiveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HistoryTr__Exhib__17036CC0">
+    <End Role="Exhibition" Type="Self.Exhibition" Multiplicity="0..1" />
+    <End Role="HistoryTrip" Type="Self.HistoryTrip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Exhibition">
+        <PropertyRef Name="ExhibitionId" />
+      </Principal>
+      <Dependent Role="HistoryTrip">
+        <PropertyRef Name="ExhibitionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HistoryTr__Exhib__17F790F9">
+    <End Role="ExhibitionStatus" Type="Self.ExhibitionStatus" Multiplicity="0..1" />
+    <End Role="HistoryTrip" Type="Self.HistoryTrip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExhibitionStatus">
+        <PropertyRef Name="ExhibitionStatusId" />
+      </Principal>
+      <Dependent Role="HistoryTrip">
+        <PropertyRef Name="ExhibitionStatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceCh__KindS__619B8048">
+    <End Role="KindService" Type="Self.KindService" Multiplicity="0..1" />
+    <End Role="ServiceCharge" Type="Self.ServiceCharge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KindService">
+        <PropertyRef Name="KindServiceId" />
+      </Principal>
+      <Dependent Role="ServiceCharge">
+        <PropertyRef Name="KindServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceCh__KindT__628FA481">
+    <End Role="KindTimeReceived" Type="Self.KindTimeReceived" Multiplicity="0..1" />
+    <End Role="ServiceCharge" Type="Self.ServiceCharge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KindTimeReceived">
+        <PropertyRef Name="KindTimeReceivedId" />
+      </Principal>
+      <Dependent Role="ServiceCharge">
+        <PropertyRef Name="KindTimeReceivedId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ServiceCh__Route__60A75C0F">
+    <End Role="Router" Type="Self.Router" Multiplicity="0..1" />
+    <End Role="ServiceCharge" Type="Self.ServiceCharge" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Router">
+        <PropertyRef Name="RouterId" />
+      </Principal>
+      <Dependent Role="ServiceCharge">
+        <PropertyRef Name="RouterId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__TypeId__571DF1D5">
+    <End Role="TypeUsers" Type="Self.TypeUsers" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeUsers">
+        <PropertyRef Name="TypeId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__WardId__5629CD9C">
+    <End Role="Ward" Type="Self.Ward" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ward">
+        <PropertyRef Name="WardId" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="WardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShipwayDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Agency" EntityType="Self.Agency" />
+    <EntitySet Name="AssignWork" EntityType="Self.AssignWork" />
+    <EntitySet Name="District" EntityType="Self.District" />
+    <EntitySet Name="Exhibition" EntityType="Self.Exhibition" />
+    <EntitySet Name="ExhibitionStatus" EntityType="Self.ExhibitionStatus" />
+    <EntitySet Name="HistoryTrip" EntityType="Self.HistoryTrip" />
+    <EntitySet Name="KindService" EntityType="Self.KindService" />
+    <EntitySet Name="KindTimeReceived" EntityType="Self.KindTimeReceived" />
+    <EntitySet Name="Province" EntityType="Self.Province" />
+    <EntitySet Name="Router" EntityType="Self.Router" />
+    <EntitySet Name="ServiceCharge" EntityType="Self.ServiceCharge" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TypeUsers" EntityType="Self.TypeUsers" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="Ward" EntityType="Self.Ward" />
+    <AssociationSet Name="FK__Agency__WardId__5165187F" Association="Self.FK__Agency__WardId__5165187F">
+      <End Role="Ward" EntitySet="Ward" />
+      <End Role="Agency" EntitySet="Agency" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__Agenc__14270015" Association="Self.FK__Exhibitio__Agenc__14270015">
+      <End Role="Agency" EntitySet="Agency" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__Assig__1332DBDC" Association="Self.FK__Exhibitio__Assig__1332DBDC">
+      <End Role="Agency" EntitySet="Agency" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__AgencyId__5812160E" Association="Self.FK__Users__AgencyId__5812160E">
+      <End Role="Agency" EntitySet="Agency" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AssignWor__Exhib__1AD3FDA4" Association="Self.FK__AssignWor__Exhib__1AD3FDA4">
+      <End Role="Exhibition" EntitySet="Exhibition" />
+      <End Role="AssignWork" EntitySet="AssignWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AssignWor__Shipp__1BC821DD" Association="Self.FK__AssignWor__Shipp__1BC821DD">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AssignWork" EntitySet="AssignWork" />
+    </AssociationSet>
+    <AssociationSet Name="FK__District__Provin__4BAC3F29" Association="Self.FK__District__Provin__4BAC3F29">
+      <End Role="Province" EntitySet="Province" />
+      <End Role="District" EntitySet="District" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ward__DistrictId__4E88ABD4" Association="Self.FK__Ward__DistrictId__4E88ABD4">
+      <End Role="District" EntitySet="District" />
+      <End Role="Ward" EntitySet="Ward" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__Creat__10566F31" Association="Self.FK__Exhibitio__Creat__10566F31">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__KindS__123EB7A3" Association="Self.FK__Exhibitio__KindS__123EB7A3">
+      <End Role="KindService" EntitySet="KindService" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__LastM__114A936A" Association="Self.FK__Exhibitio__LastM__114A936A">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__Sende__0E6E26BF" Association="Self.FK__Exhibitio__Sende__0E6E26BF">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Exhibitio__WardR__0F624AF8" Association="Self.FK__Exhibitio__WardR__0F624AF8">
+      <End Role="Ward" EntitySet="Ward" />
+      <End Role="Exhibition" EntitySet="Exhibition" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HistoryTr__Exhib__17036CC0" Association="Self.FK__HistoryTr__Exhib__17036CC0">
+      <End Role="Exhibition" EntitySet="Exhibition" />
+      <End Role="HistoryTrip" EntitySet="HistoryTrip" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HistoryTr__Exhib__17F790F9" Association="Self.FK__HistoryTr__Exhib__17F790F9">
+      <End Role="ExhibitionStatus" EntitySet="ExhibitionStatus" />
+      <End Role="HistoryTrip" EntitySet="HistoryTrip" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceCh__KindS__619B8048" Association="Self.FK__ServiceCh__KindS__619B8048">
+      <End Role="KindService" EntitySet="KindService" />
+      <End Role="ServiceCharge" EntitySet="ServiceCharge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceCh__KindT__628FA481" Association="Self.FK__ServiceCh__KindT__628FA481">
+      <End Role="KindTimeReceived" EntitySet="KindTimeReceived" />
+      <End Role="ServiceCharge" EntitySet="ServiceCharge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ServiceCh__Route__60A75C0F" Association="Self.FK__ServiceCh__Route__60A75C0F">
+      <End Role="Router" EntitySet="Router" />
+      <End Role="ServiceCharge" EntitySet="ServiceCharge" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__TypeId__571DF1D5" Association="Self.FK__Users__TypeId__571DF1D5">
+      <End Role="TypeUsers" EntitySet="TypeUsers" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__WardId__5629CD9C" Association="Self.FK__Users__WardId__5629CD9C">
+      <End Role="Ward" EntitySet="Ward" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

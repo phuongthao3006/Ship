@@ -1,0 +1,135 @@
+﻿@model ShipwayUnitOfWork.Models.ModelView.AgencyModelView
+
+<div class="modal-header">
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+    <h4 class="modal-title">Sửa đại lý</h4>
+</div>
+
+@using (Html.BeginForm("EditAgency", "ManageAgency", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="modal-body">
+
+        @Html.ValidationSummary(true)
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Số điện thoại *</label>
+                <div class="col-lg-9">
+                    @Html.HiddenFor(model => model.AgencyId)
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control", @required = "required" })
+                </div>
+            </div>
+            @*cbb tinh*@
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Tỉnh/Thành phố *</label>
+                <div class="col-lg-9">
+                    @Html.DropDownListFor(model => model.ProvinceId, new SelectList(ViewBag.ListProvince, "ProvinceId", "Name"), "-- Chọn Tỉnh/Thành phố --", new { @class = "form-control", @required = "required", id = "ProvinceCbb_Edit" })
+                </div>
+            </div>
+            @*cbb huyen*@
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Quận/Huyện *</label>
+                <div class="col-lg-9">
+                    @Html.DropDownListFor(model => model.DistrictId, new SelectList(ViewBag.ListDistrict, "DistrictId", "Name"), "-- Chọn Quận/Huyện --", new { @class = "form-control", @required = "required", id = "DistrictCbb_Edit" })
+                </div>
+            </div>
+            @*cbb xa*@
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Phường/Xã *</label>
+                <div class="col-lg-9">
+                    @Html.DropDownListFor(model => model.WardId, new SelectList(ViewBag.ListWard, "WardId", "Name"), "-- Chọn Phường/Xã --", new { @class = "form-control", @required = "required", id = "WardCbb_Edit" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Địa chỉ *</label>
+                <div class="col-lg-9">
+                    @Html.TextBoxFor(model => model.Address, new { @class = "form-control", @required = "required" })
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-3 col-sm-3 control-label">Tên đại lý</label>
+                <div class="col-lg-9">
+                    @Html.TextBoxFor(model => model.AgencyName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Thời gian hoạt động</label>
+                <div class="col-lg-9">
+                    @Html.TextBoxFor(model => model.ActivityTime, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-lg-3 col-sm-3 control-label">Đại lý trung tâm</label>
+                <div class="col-lg-9">
+                    @*@Html.CheckBoxFor(model => model.IsCentralWarehouse, new {value = Model.IsCentralWarehouse})*@
+                    @Html.CheckBoxFor(model => model.IsCentralWarehouse, Model.IsCentralWarehouse)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" class="btn btn-default btn-primary">Lưu</button>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $("#ProvinceCbb_Edit").change(function () {
+        console.log(1);
+        if ($(this).val() != "") {
+            idProvinceSelected = $(this).val();
+            $.ajax({
+                url: "/Address/GetDistrictByIdProvice",
+                type: "POST",
+                dataType: "json",
+                data: {
+                    idProvince: idProvinceSelected
+                },
+                success: function (data) {
+                    $('#WardCbb_Edit').empty();
+                    $('#WardCbb_Edit').append($(`<option value="">-- Chọn Phường/Xã --</option>`));
+                    var citiesSelect = $('#DistrictCbb_Edit');
+                    citiesSelect.empty();
+
+                    citiesSelect.append($(`<option value="">-- Chọn Quận/Huyện --</option>`));
+
+                    for (var key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            $(citiesSelect).append($(`<option value="${data[key]['DistrictId']}">${data[key]['Name']}</option>`));
+                        }
+                    }
+                }
+            })
+        }
+    })
+
+    $("#DistrictCbb_Edit").change(function () {
+        if ($(this).val() != "") {
+            idDistrictSelected = $(this).val();
+            $.ajax({
+                url: "/Address/GetWardByIdDistrict",
+                type: "POST",
+                dataType: "json",
+                data: {
+                    idDistrict: idDistrictSelected
+                },
+                success: function (data) {
+                    var citiesSelect = $('#WardCbb_Edit');
+                    citiesSelect.empty();
+
+                    citiesSelect.append($(`<option value="">-- Chọn Phường/Xã --</option>`));
+
+                    for (var key in data) {
+                        if (data.hasOwnProperty(key)) {
+                            $(citiesSelect).append($(`<option value="${data[key]['WardId']}">${data[key]['Name']}</option>`));
+                        }
+                    }
+                }
+            })
+        }
+    })
+</script>

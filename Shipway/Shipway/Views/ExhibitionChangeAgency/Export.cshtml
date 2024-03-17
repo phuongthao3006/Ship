@@ -1,0 +1,147 @@
+﻿@model ShipwayBusiness.Entities.Exhibition
+@{
+    ViewBag.Title = "Export";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+
+                <h4>
+                    XUẤT ĐƠN HÀNG
+                    <a href="#" class="popover-help" data-original-title="Equipment Report" data-content="">
+                        <i class="fa fa-question-circle"></i>
+                    </a>
+                </h4>
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                </span>
+            </header>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                XUẤT ĐƠN HÀNG
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                </span>
+            </header>
+            <div class="panel-body">
+
+                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="ModalAddExhibition" class="modal fade">
+
+                </div>
+
+                <div class="adv-table">
+                    <table class="display table listExhibition">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Người gửi</th>
+                                <th>SĐT người gửi</th>
+                                <th>Người nhận</th>
+                                <th>SĐT người nhận</th>
+                                <th>Địa chỉ nhận</th>
+                                <th>Phí vận chuyển</th>
+                                <th>Ngày giao dự kiến</th>
+                                <th>Trạng thái</th>
+                                <th>Xuất kho</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.ListExhibition)
+                            {
+                                <tr>
+                                    <th>@item.Exhibition.ExhibitionId</th>
+                                    <td>@item.Exhibition.SenderName</td>
+                                    <td>@item.Exhibition.SenderPhoneNumber</td>
+                                    <td>@item.Exhibition.ReceiverName</td>
+                                    <td>@item.Exhibition.ReceiverPhoneNumber</td>
+                                    <td>@item.Exhibition.ReceiverAddress</td>
+                                    <td>@item.Exhibition.Cost</td>
+                                    <td>@Convert.ToDateTime(@item.Exhibition.DayReceive == null ? DateTime.Now : @item.Exhibition.DayReceive).ToString("dd/MM/yyyy")</td>
+                                    <td>@item.ExhibitonStatus</td>
+                                    <td>
+                                        <a class="btn btn-warning editmodal" href="@Url.Action("ExportExhibition", "ExhibitionChangeAgency", new { idExhibition=@item.Exhibition.ExhibitionId })" title="Edit Exhibition" data-toggle="modal"><i class="fa fa-arrow-right"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="modal_exhibition" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content partial-container">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <!--<script>
+            var placeSearch, senderAddress, receiverAddress;
+            var componentForm = {
+                administrative_area_level_1: 'short_name',
+            };
+
+            function initAutocomplete() {
+                // Create the autocomplete object, restricting the search to geographical
+                // location types.
+                senderAddress = new google.maps.places.Autocomplete(
+                  (document.getElementById('SenderAddress')),
+                  { types: ['geocode'] });
+                senderAddress.addListener('place_changed', fillInAddress);
+
+                receiverAddress = new google.maps.places.Autocomplete(
+                  (document.getElementById('ReceiverAddress')),
+                  { types: ['geocode'] });
+                receiverAddress.addListener('place_changed', fillInAddressReceive);
+            }
+
+            function fillInAddress() {
+                // Get the place details from the autocomplete object.
+                var place = senderAddress.getPlace();
+                var locationsender = place.geometry.location.lat() + ';' + place.geometry.location.lng();
+                $("#LocationSender").val(locationsender.toString());
+                // Get each component of the address from the place details
+                // and fill the corresponding field on the form.
+                for (var i = 0; i < place.address_components.length; i++) {
+                    var addressType = place.address_components[i].types[0];
+                    if (componentForm[addressType]) {
+                        var val = place.address_components[i][componentForm[addressType]];
+                        document.getElementById("stateSender").value = val;
+                    }
+                }
+            }
+
+            function fillInAddressReceive() {
+                // Get the place details from the autocomplete object.
+                var place = receiverAddress.getPlace();
+                var locationreceive = place.geometry.location.lat() + ';' + place.geometry.location.lng();
+                $("#LocationReceive").val(locationreceive.toString());
+                // Get each component of the address from the place details
+                // and fill the corresponding field on the form.
+                for (var i = 0; i < place.address_components.length; i++) {
+                    var addressType = place.address_components[i].types[0];
+                    if (componentForm[addressType]) {
+                        var val = place.address_components[i][componentForm[addressType]];
+                        document.getElementById("stateReceive").value = val;
+                    }
+                }
+            }
+    </script>-->
+
+    <script src="~/Scripts/manageexhibition.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Jpoq3KL4Or2BE-9hVw3MYmeS3jsXzS8&libraries=places&callback=initAutocomplete"
+            async defer></script>
+}

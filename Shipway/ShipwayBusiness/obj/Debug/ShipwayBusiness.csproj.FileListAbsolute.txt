@@ -1,0 +1,260 @@
+D:\dồ án tốt nghiệp\Project\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csprojResolveAssemblyReference.cache
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.ApplicationInsights.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.ApplicationInsights.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+D:\dồ án tốt nghiệp\Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csprojResolveAssemblyReference.cache
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+D:\C#\doan\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+D:\Đồ án\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+E:\Download\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+C:\Users\admin\Downloads\Telegram Desktop\Shipway\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+D:\MYDRIVE\job\PhuongThao_ASPNET_QuanLyCongTyVanChuyen\Shipway\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\ApplicationInsights.config
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\csc.exe
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\System.Collections.Immutable.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\System.Reflection.Metadata.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\vbc.exe
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\roslyn\VBCSCompiler.exe.config
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll.config
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\ShipwayBusiness.pdb
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\EntityFramework.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Agent.Intercept.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\EntityFramework.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\EntityFramework.SqlServer.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.DependencyCollector.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.Web.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.AI.WindowsServer.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.AssemblyReference.cache
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CoreCompileInputs.cache
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.csproj.CopyComplete
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.dll
+D:\C#\QuanLyCongTyVanChuyen_Project\Shipway\ShipwayBusiness\obj\Debug\ShipwayBusiness.pdb

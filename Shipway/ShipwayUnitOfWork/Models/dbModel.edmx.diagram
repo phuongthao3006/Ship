@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5994e25b528c461e9682037b4065e2f8" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="Shipway_databaseModel.Agency" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.AssignWork" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.District" Width="1.5" PointX="1.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.Exhibition" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.ExhibitionStatus" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.HistoryTrip" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.KindService" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.KindTimeReceived" Width="1.5" PointX="3.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.Province" Width="1.5" PointX="1.5" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.Router" Width="1.5" PointX="3.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.ServiceCharge" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.TypeUsers" Width="1.5" PointX="1.5" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.Users" Width="1.5" PointX="0.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Shipway_databaseModel.Ward" Width="1.5" PointX="1.5" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Agency__WardId__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__Agenc__14270015" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__Assig__1332DBDC" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Users__AgencyId__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__AssignWor__Exhib__1AD3FDA4" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__AssignWor__Shipp__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__District__Provin__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Ward__DistrictId__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__Creat__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__KindS__123EB7A3" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__LastM__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__Sende__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Exhibitio__WardR__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__HistoryTr__Exhib__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__HistoryTr__Exhib__17F790F9" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__ServiceCh__KindS__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__ServiceCh__KindT__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__ServiceCh__Route__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Users__TypeId__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="Shipway_databaseModel.FK__Users__WardId__5629CD9C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

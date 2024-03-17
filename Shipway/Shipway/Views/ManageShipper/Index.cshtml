@@ -1,0 +1,187 @@
+﻿@model ShipwayUnitOfWork.Models.Users
+@using ShipwayUnitOfWork.Models
+@using ShipwayUnitOfWork.Models.ModelView
+@{
+    ViewBag.Title = "Quản lý người giao hàng";
+    List<UsersModelView> listShipper = ViewBag.ListShipper as List<UsersModelView>;
+    List<string> errors = TempData["errorMessages"] as List<string>;
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                QUẢN LÝ NGƯỜI GIAO HÀNG
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                </span>
+            </header>
+            <div class="panel-body">
+
+                @*<div class="row-fluid">
+            <button data-toggle="modal" class="btn btn-primary" data-target="#ModalAddShipper">
+                Thêm người giao hàng
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>*@
+                @if (errors != null && errors.Count > 0)
+                {
+                    <div class="text-error">
+                        @foreach(var err in errors)
+                        {
+                            @err <br />
+                        }
+                    </div>
+                }
+
+
+                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="ModalAddShipper" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                                <h4 class="modal-title">Thêm người giao hàng</h4>
+                            </div>
+                            @using (Html.BeginForm("SaveShipper", "ManageShipper", FormMethod.Post, new { @class = "form-horizontal" }))
+                            {
+                                <div class="modal-body">
+
+                                    @Html.ValidationSummary(true)
+                                    <div class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Tên *</label>
+                                            <div class="col-lg-9">
+                                                <input class="form-control" name="Name" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Email *</label>
+                                            <div class="col-lg-9">
+                                                <input type="email" class="form-control" name="Email" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Số điện thoại *</label>
+                                            <div class="col-lg-9">
+                                                <input type="text" class="form-control" name="PhoneNumber" required />
+                                            </div>
+                                        </div>
+                                        @*cbb tinh*@
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Tỉnh/Thành phố *</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownList("ProvinceId", new SelectList(ViewBag.ListProvince, "ProvinceId", "Name"), "-- Chọn Tỉnh/Thành phố --", new { @class = "ProvinceCbb form-control", @required = "required", id = "ProvinceCbb" })
+                                            </div>
+                                        </div>
+                                        @*cbb huyen*@
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Quận/Huyện *</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownList("DistrictId", new SelectList(ViewBag.ListDistrict, "DistrictId", "Name"), "-- Chọn Quận/Huyện --", new { @class = "DistrictCbb form-control", @required = "required", id = "DistrictCbb" })
+                                            </div>
+
+                                        </div>
+                                        @*cbb xa*@
+                                        <div class="form-group">
+                                            <label class="col-lg-3 col-sm-3 control-label">Phường/Xã *</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownListFor(model => model.WardId, new SelectList(ViewBag.ListWard, "WardId", "Name"), "-- Chọn Phường/Xã --", new { @class = "WardCbb form-control", @required = "required", id = "WardCbb" })
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="txtFirstName" class="col-lg-3 col-sm-3 control-label">Thuộc đại lý *</label>
+                                            <div class="col-lg-9">
+                                                @Html.DropDownListFor(model => model.AgencyId, (SelectList)ViewBag.Agency, new { @class = "form-control", @required = "required" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-2 col-lg-10">
+                                            <button type="submit" class="btn btn-default btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="col-lg-5">
+                        @Html.TextBox("fullTextSearch", null, new { @class = "form-control", id = "fullTextSearch", placeholder = "Nhập tìm kiếm" })
+                    </div>
+                    <div class="col-lg-5">
+                        @Html.DropDownList("agencySearch", (SelectList)ViewBag.Agency, "-- Chọn nhà phân phối --", new { @class = "form-control", id = "agencySearch" })
+                    </div>
+                    <div class="col-lg-2">
+                        <p data-toggle="modal" class="btn btn-primary" id="clearFilter">
+                            Xóa bộ lọc
+                            <i class="fa fa-times-circle"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="adv-table">
+                    <table class="display table listShipper">
+                        <thead>
+                            <tr>
+                                <th>Tên người giao hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Thuộc đại lý</th>
+                                <th>Địa chỉ</th>
+                                <th>Phường/Xã</th>
+                                <th>Quận/Huyện</th>
+                                <th>Tỉnh/Thành Phố</th>
+                                <th>Sửa</th>
+                                @*<th>Xóa</th>*@
+                            </tr>
+                        </thead>
+                        <tbody id="tableContent">
+                            @if (listShipper != null && listShipper.Count > 0)
+                            {
+                                foreach (var item in listShipper)
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.PhoneNumber</td>
+                                        <td>@item.Email</td>
+                                        <td id="agency_@item.AgencyId">@item.AgencyName</td>
+                                        <td>@item.Address</td>
+                                        <td>@item.WardName</td>
+                                        <td>@item.DistrictName</td>
+                                        <td>@item.ProvinceName</td>
+                                        <td>
+                                            <a class="btn btn-primary editmodal" href="#" data-url="@Url.Action("EditShipper", "ManageShipper", new { id=@item.Id})" title="Edit Shipper" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                                        </td>
+                                        @*<td>
+                                            <a class="btn btn-danger deletemodal" href="#" data-url="@Url.Action("DeleteShipper", "ManageShipper", new { id=@item.Id})"><i class="fa fa-trash-o"></i></a>
+                                        </td>*@
+                                    </tr>
+                                }
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="modal_shipper" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content partial-container">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    <script src="~/Scripts/address_province.js"></script>
+    <script src="~/Scripts/manageShipper.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+}

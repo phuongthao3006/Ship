@@ -1,0 +1,145 @@
+﻿@using Shipway.Cookies
+@using Shipway.Constant
+@{
+    var currentUser = (ShipwayBusiness.Entities.User)HttpContext.Current.Session["CurrentUser"];
+    var shipperId = HttpContext.Current.Session["ShipperId"];
+}
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        <!-- sidebar menu start-->
+        <div class="leftside-navigation">
+            <ul class="sidebar-menu" id="nav-accordion">
+                @if (Shipway.Cookies.UserCookie.GetDataCookie() != null)
+                {
+                    if (UserCookie.GetDataCookie().TypeId == UserConstant.TYPEUSER_SUPPERADMIN)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "SuperAdmin")" id="ManageUser">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>Quản lý tài khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageAgency")" id="ManageAgency">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span>Quản lý đại lý</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageExhibition")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageShipper")" id="ManageShipper">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                                <span>Quản lý người giao hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageServiceCharge")" id="ManageServiceCharge">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                                <span>Quản lý biểu phí</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("ManageCustomer", "SuperAdmin")" id="ManageUser">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <span>Báo cáo thông kê đơn hàng</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                <a href="@Url.Action("Index", "Reporting")" id="Reporting">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <span>Báo cáo thống kê</span>
+                </a>
+            </li> -->
+
+                    }
+                    else if (UserCookie.GetDataCookie().TypeId == UserConstant.TYPEUSER_ADMIN)
+                    {
+                        <li>
+                            <a href="@Url.Action("ManageCustomer", "ManageUser")" id="ManageUser">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <span>Quản lý khách hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageExhibition")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Import", "ExhibitionChangeAgency")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Quản lý đơn hàng nhập kho</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Export", "ExhibitionChangeAgency")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Quản lý đơn hàng xuất kho</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ManageShipper")" id="ManageShipper">
+                                <i class="fa fa-truck" aria-hidden="true"></i>
+                                <span>Quản lý người giao hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "LumpExhibition")" id="LumpExhibition">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                <span>Gộp đơn hàng tối ưu</span>
+                            </a>
+                        </li>
+                    }
+                    else if (UserCookie.GetDataCookie().TypeId == UserConstant.TYPEUSER_CUSTOMER)
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "ManageUser")" id="ManageUser">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>Tài khoản cá nhân</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "ExhibitionCustomer")" id="ManageUser">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Quản lý đơn hàng</span>
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="@Url.Action("Index", "ManageUser")" id="ManageUser">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>Tài khoản cá nhân</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("GetExhibitionAssginToShipper", "ExhibitionChangeAgency")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Nhận đơn hàng đi giao</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("GetExhibitionAssginToCustomer", "ExhibitionChangeAgency")" id="ManageExhibition">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                                <span>Trạng thái đơn hàng đang giao</span>
+                            </a>
+                        </li>
+                    }
+                }
+
+
+            </ul>
+        </div>
+
+        <!-- sidebar menu end-->
+    </div>
+</aside>
+

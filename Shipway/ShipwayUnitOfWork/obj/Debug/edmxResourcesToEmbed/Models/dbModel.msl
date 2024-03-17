@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Shipway_databaseModelStoreContainer" CdmEntityContainer="ShipwayDbEntities">
+    <EntitySetMapping Name="Agency">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Agency">
+        <MappingFragment StoreEntitySet="Agency">
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="AgencyName" ColumnName="AgencyName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ActivityTime" ColumnName="ActivityTime" />
+          <ScalarProperty Name="WardId" ColumnName="WardId" />
+          <ScalarProperty Name="IsCentralWarehouse" ColumnName="IsCentralWarehouse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AssignWork">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.AssignWork">
+        <MappingFragment StoreEntitySet="AssignWork">
+          <ScalarProperty Name="AssignWorkId" ColumnName="AssignWorkId" />
+          <ScalarProperty Name="ExhibitionId" ColumnName="ExhibitionId" />
+          <ScalarProperty Name="ShipperId" ColumnName="ShipperId" />
+          <ScalarProperty Name="AssignWorkDate" ColumnName="AssignWorkDate" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="District">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exhibition">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Exhibition">
+        <MappingFragment StoreEntitySet="Exhibition">
+          <ScalarProperty Name="ExhibitionId" ColumnName="ExhibitionId" />
+          <ScalarProperty Name="SenderId" ColumnName="SenderId" />
+          <ScalarProperty Name="ReceiverName" ColumnName="ReceiverName" />
+          <ScalarProperty Name="ReceiverPhoneNumber" ColumnName="ReceiverPhoneNumber" />
+          <ScalarProperty Name="ReceiverAddress" ColumnName="ReceiverAddress" />
+          <ScalarProperty Name="WardReceiveId" ColumnName="WardReceiveId" />
+          <ScalarProperty Name="PackageWeigh" ColumnName="PackageWeigh" />
+          <ScalarProperty Name="PackageLong" ColumnName="PackageLong" />
+          <ScalarProperty Name="PackageWide" ColumnName="PackageWide" />
+          <ScalarProperty Name="PackageHigh" ColumnName="PackageHigh" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedUserId" ColumnName="CreatedUserId" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedUserId" ColumnName="LastModifiedUserId" />
+          <ScalarProperty Name="KindServiceId" ColumnName="KindServiceId" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ExhibitionStatusId" ColumnName="ExhibitionStatusId" />
+          <ScalarProperty Name="DayReceive" ColumnName="DayReceive" />
+          <ScalarProperty Name="LocationSender" ColumnName="LocationSender" />
+          <ScalarProperty Name="LocationReceive" ColumnName="LocationReceive" />
+          <ScalarProperty Name="IsSendToAgency" ColumnName="IsSendToAgency" />
+          <ScalarProperty Name="AssignToAgencyId" ColumnName="AssignToAgencyId" />
+          <ScalarProperty Name="GroupLump" ColumnName="GroupLump" />
+          <ScalarProperty Name="NumberOfFailedDeliveries" ColumnName="NumberOfFailedDeliveries" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExhibitionStatus">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.ExhibitionStatus">
+        <MappingFragment StoreEntitySet="ExhibitionStatus">
+          <ScalarProperty Name="ExhibitionStatusId" ColumnName="ExhibitionStatusId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoryTrip">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.HistoryTrip">
+        <MappingFragment StoreEntitySet="HistoryTrip">
+          <ScalarProperty Name="HistoryTripId" ColumnName="HistoryTripId" />
+          <ScalarProperty Name="ExhibitionId" ColumnName="ExhibitionId" />
+          <ScalarProperty Name="DateTrip" ColumnName="DateTrip" />
+          <ScalarProperty Name="ExhibitionStatusId" ColumnName="ExhibitionStatusId" />
+          <ScalarProperty Name="CurrentAddress" ColumnName="CurrentAddress" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KindService">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.KindService">
+        <MappingFragment StoreEntitySet="KindService">
+          <ScalarProperty Name="KindServiceId" ColumnName="KindServiceId" />
+          <ScalarProperty Name="KindServiceName" ColumnName="KindServiceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KindTimeReceived">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.KindTimeReceived">
+        <MappingFragment StoreEntitySet="KindTimeReceived">
+          <ScalarProperty Name="KindTimeReceivedId" ColumnName="KindTimeReceivedId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NumberOfDay" ColumnName="NumberOfDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Province">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Router">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Router">
+        <MappingFragment StoreEntitySet="Router">
+          <ScalarProperty Name="RouterId" ColumnName="RouterId" />
+          <ScalarProperty Name="RouterName" ColumnName="RouterName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceCharge">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.ServiceCharge">
+        <MappingFragment StoreEntitySet="ServiceCharge">
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="ServiceChargeId" ColumnName="ServiceChargeId" />
+          <ScalarProperty Name="RouterId" ColumnName="RouterId" />
+          <ScalarProperty Name="KindServiceId" ColumnName="KindServiceId" />
+          <ScalarProperty Name="KindTimeReceivedId" ColumnName="KindTimeReceivedId" />
+          <ScalarProperty Name="CostOderUrban" ColumnName="CostOderUrban" />
+          <ScalarProperty Name="CostOderSubUrban" ColumnName="CostOderSubUrban" />
+          <ScalarProperty Name="AddWeight" ColumnName="AddWeight" />
+          <ScalarProperty Name="AddMoney" ColumnName="AddMoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeUsers">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.TypeUsers">
+        <MappingFragment StoreEntitySet="TypeUsers">
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="WardId" ColumnName="WardId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ward">
+      <EntityTypeMapping TypeName="Shipway_databaseModel.Ward">
+        <MappingFragment StoreEntitySet="Ward">
+          <ScalarProperty Name="WardId" ColumnName="WardId" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

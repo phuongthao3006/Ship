@@ -1,0 +1,10 @@
+﻿namespace Shipway.Message
+{
+    public class ServiceChargeMessage
+    {
+        public static string INSERT_FAIL = "Lỗi! Vui lòng liên hệ với trung tâm tư vấn";
+        public static string UPDATE_FAIL = "Lỗi! Vui lòng liên hệ với trung tâm tư vấn";
+        public static string DELETE_FAIL = "Lỗi! Vui lòng liên hệ với trung tâm tư vấn";
+        public static string REPASSWORD_NOTEQUAL_PASSWORD = "Nhập lại mật khẩu không khớp";
+    }
+}
