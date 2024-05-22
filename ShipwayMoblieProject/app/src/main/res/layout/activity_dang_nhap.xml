@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:fontFamily="serif-monospace"
+            android:src="@drawable/logo"
+            android:textColorHint="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="SHIPWAY"
+            android:layout_marginLeft="10dp"
+            android:textColor="#28282e"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_round"
+            android:hint="Email"
+            android:paddingLeft="50dp"
+            android:textSize="15dp"
+            android:textColorHint="#868C91"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/icon_email"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_round"
+            android:layout_gravity="center"
+            android:paddingLeft="50dp"
+            android:hint="Mật Khẩu"
+            android:textSize="15dp"
+            android:inputType="textPassword"
+            android:textColorHint="#868C91"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_key"
+            android:paddingLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="140dp"
+            android:text="Đăng Ký"
+            android:backgroundTint="#28282e"
+            android:textSize="20dp"
+            android:layout_marginTop="150dp"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="140dp"
+            android:text="Đăng Nhập"
+            android:backgroundTint="#28282e"
+            android:textSize="20dp"
+            android:layout_marginTop="70dp"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="-------------------------------------------------------------------------------------- "
+            android:textColor="#28282e" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotline : 0357238238 - 0273273283"
+            android:textSize="18dp"
+            android:layout_marginLeft="46dp"
+            android:textColor="#28282e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginLeft="50dp"
+            android:text="Email : hotlineshipway@gmail.com"
+            android:textColor="#28282e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="-------------------------------------------------------------------------------------- "
+            android:textColor="#28282e" />
+    </LinearLayout>
+</LinearLayout>

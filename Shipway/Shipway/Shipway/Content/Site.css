@@ -1,0 +1,70 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pac-container {
+    background-color: #FFF;
+    z-index: 1040;
+    position: fixed;
+    display: inline-block;
+    float: left;
+}
+
+.modal {
+    z-index: 1040;
+}
+
+​ .navbar-form {
+    margin-top:0px !important;
+}
+
+#IsSendToAgency{
+    width:20px;
+    height:20px;
+    margin-left:15px;
+}
+
+.ic-tracking{
+    background-image:url("/Content/images/icon.png");
+    background-repeat:no-repeat;
+    display:inline-block;
+    text-indent:-9999px;
+    vertical-align:middle;
+}
+
+.ic-xe{
+    background-position: -85px 0;
+    width:70px;
+    height:62px;
+}
+
+.ic-co{
+    background-position: -171px 0;
+    width:70px;
+    height:62px;
+}
+
+.itemExhibition:hover{
+    cursor:pointer;
+}
+
+.itemExhibition{
+    border: solid #2b9a6a 1px;
+    border-radius:0px 0px 5px 5px;
+}
+
+.header_exhibition{
+    font-size:15px;
+    padding:6px;
+    text-align:center;
+    border:solid #2b9a6a 1px;
+    border-bottom: solid #fff 0px !important;
+    border-radius:5px 5px 0px 0px;
+}

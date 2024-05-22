@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drl_main">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawable_nav"
+        android:backgroundTint="@color/black"
+        app:itemTextColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.TrangChuActivity"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:backgroundTint="#F6F3E4"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_round"
+                    android:hint="Tìm kiếm đơn"
+                    android:textSize="15dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+                <ImageView
+                    android:id="@+id/icon_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/icon_search" />
+            </FrameLayout>
+
+
+            <ImageView
+                android:id="@+id/img_sidebar"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logo"
+                android:layout_marginLeft="15dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:paddingRight="20dp">
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spin_status"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:ellipsize="marquee"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_weight="4"/>-->
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lọc"
+                android:layout_gravity="end|center"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_exhibis"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1" />
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:background="#D9D9D9">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/imbHome"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/baseline_home_24">-->
+<!--                </ImageButton>-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/imbDangXuat"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/baseline_account_circle_24">-->
+<!--                </ImageButton>-->
+<!--            </LinearLayout>-->
+
+<!--        </FrameLayout>-->
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

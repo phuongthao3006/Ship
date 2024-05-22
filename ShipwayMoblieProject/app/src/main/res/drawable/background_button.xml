@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--hiển thị khi ko nhấn nut button -->
+    <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/black" />
+            <!--tạo viền cho button -->
+            <stroke android:width="3dp"
+                android:color="@color/white"/>
+            <!--độ bo tròn 4 góc -->
+            <corners android:radius="35dp"/>
+        </shape>
+
+    </item>
+</selector>
